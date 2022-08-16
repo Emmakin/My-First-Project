@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+    min-height: 100vh;
+    background-image: linear-gradient(to top left, rgb(255, 0, 255), rgb(153, 0, 255));
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main{
+    background-color: white;
+    height: 80vh;
+    width: 60%;
+    background: linear-gradient( to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    backdrop-filter: blur(100rem);
+    box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    
+    
+}
+ .circle1, .circle2{
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.circle1{
+    top: 5%;
+    right: 16%;
+    background: linear-gradient( to bottom left, rgba(255, 255, 255, 0.6) ,rgba(255, 255, 255, 0.2) );
+   
+}
+
+.circle2{
+    bottom: 5%;
+    left: 16%;
+    background: linear-gradient( to bottom left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2) );
+}
+
+
+.leftSide{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient( to bottom right, 
+    rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) );
+    border-radius: 2rem 0 0 2rem;
+    padding: 0.2rem;
+    column-gap: 0.2rem;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.profilepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profilepic img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 0;
+
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.tabs-pic{
+    border-radius: 50%;
+}
+
+.tabinfo{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top left, rgb(255, 0, 255), rgb(153, 0, 255));
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+
+.tabinfo-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rightSide{
+    background: linear-gradient( to bottom right, 
+    rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) );
+    border-radius: 0 2rem 2rem 0;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 6rem;
+    gap: 1.5rem;
+    
+    
+}
+
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+   }
+
+
+/* text */
+.major{
+   color: rgba(114, 5, 114, 0.9);
+   font-weight: 700;
+}
+
+.gametabs-maintexts{
+    color:rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+}
+
+.gametabs-subtexts{
+    color:rgba(0, 0, 0, 0.55);
+    font-weight: 700;
+}
+
+.profilepic-text{
+    color: rgba(22, 4, 39, 0.7); 
+    font-weight: 700;
+}
+
+.profilepic-textmin{
+    color:rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+.tab-tab{
+    color: rgba(76, 12, 136, 0.6);
+    font-weight: 700;
+}
+
+.tabinfo-texts{
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gametabs-percent{
+    font-weight: 800;
+    color: rgba(172, 9, 172, 0.9);
+}
+
+
+.mainsection input{
+    display: flex;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.1rem 0.2rem 0.2rem 0.4rem;
+    background: linear-gradient( to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) ); 
+    justify-content: center;
+    align-items: center;
+}
+
+.gametabs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    background: linear-gradient( to bottom right, 
+    rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6) );
+    border-radius: 1rem;
+    padding:0.1rem 0.2rem 0.2rem 0.1rem;
+    box-shadow: 0.2rem  0.2rem rgb(0, 0, 0, 0.1);
+}
+.gametabs-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 2rem;
+
+}
+
+.gametabs-pic{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+
+}
+
+.gametabs-pic img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gametabs-progressbar{
+    width: 170px;
+    height: 12px;
+    background: rgb(172, 9, 172);
+    border-radius: 0.5rem;
+    position: relative;
+     }
+
+.gametabs-progressbar::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    left: 20%;
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    align-items: flex-end; 
+    flex-direction: column;
+    font-family: inherit;
+    color: white;
+}
+
+.attribution a { color: hsl(0, 0%, 0%); }
+
+@media screen and (max-width: 760px)
+{
+    .content{
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2rem;       
+}
+
+}
+
+
